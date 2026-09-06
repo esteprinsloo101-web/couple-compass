@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Couple Compass — practical relationship tools for South African couples: check-ins, repair scripts, listening prompts, appreciation habits. Not therapy. Adults 18+.">
+  <meta name="robots" content="index,follow">
+  <title>Couple Compass | Relationship tools (not therapy)</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle fill='%238b4a5c' cx='32' cy='32' r='30'/%3E%3Ctext x='32' y='41' text-anchor='middle' fill='white' font-size='16' font-family='sans-serif' font-weight='700'%3ECC%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <div class="safety-bar" role="alert">
+    <p>
+      <strong>Safety first:</strong> If you are in danger or experiencing domestic violence — leave this app and get help now.
+      Emergency <strong>112</strong> · SAPS <strong>10111</strong> · GBV Command Centre <strong>0800 428 428</strong> (or <strong>*120*7867#</strong>) ·
+      <a href="https://findahelpline.com" target="_blank" rel="noopener noreferrer">findahelpline.com</a>
+    </p>
+    <div class="safety-actions">
+      <a class="btn-call" href="tel:112">Call 112</a>
+      <a class="btn-call alt" href="tel:0800428428">GBV 0800 428 428</a>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <header class="site-header">
+      <div class="logo-mark" aria-hidden="true">CC</div>
+      <h1>Couple Compass</h1>
+      <p class="tagline">Practical psychology-based tools for couples who want to improve — or feel stuck. Check-ins, repair scripts, listening prompts, appreciation habits. Faceless. South Africa–aware. Free demo · R149 pack.</p>
+      <div class="badge-row">
+        <span class="badge">Adults 18+</span>
+        <span class="badge">Not therapy</span>
+        <span class="badge">Not counselling</span>
+        <span class="badge">Scenario cards only</span>
+        <span class="badge">No AI therapist</span>
+      </div>
+    </header>
+
+    <aside class="disclaimer-box" role="note">
+      <strong>Hard safety:</strong> Couple Compass is <em>not</em> couples therapy, counselling, mediation, clinical advice, or diagnosis.
+      It does <strong>not</strong> replace a registered psychologist, counsellor, social worker, or mediator.
+      Tools are scenario cards and exercises for consenting adults (18+) — not an AI therapist chat.
+      <br><br>
+      <strong>Domestic violence:</strong> If you are unsafe, controlled, threatened, or hurt — leave and call emergency / helplines.
+      SA: emergency <strong>112</strong>, SAPS <strong>10111</strong>, GBV Command Centre <strong>0800 428 428</strong> / <strong>*120*7867#</strong>, or
+      <a href="https://findahelpline.com" target="_blank" rel="noopener noreferrer">findahelpline.com</a>.
+      <br><br>
+      <strong>Age:</strong> 18+ only. No under-18. <strong>POPIA:</strong> pulse history stays in your browser — nothing is uploaded.
+    </aside>
+
+    <nav class="modules" aria-label="Modes">
+      <a href="#pulse">Pulse</a>
+      <a href="#modes">Modes</a>
+      <a href="#help">When to get help</a>
+      <a href="#pack">Get the pack</a>
+    </nav>
+
+    <main>
+      <!-- Relationship pulse -->
+      <section class="card" id="pulse">
+        <h2>Relationship pulse</h2>
+        <p class="lead">Rate how the relationship feels today (1–5). Optional one-line note. History stays on this device only (localStorage).</p>
+        <form id="pulse-form">
+          <label>How connected / steady do you feel today?</label>
+          <div class="mood-scale" id="pulse-scale" role="group" aria-label="Pulse from 1 to 5"></div>
+          <label for="pulse-note">Optional note</label>
+          <input type="text" id="pulse-note" maxlength="280" placeholder="One sentence is enough…">
+          <div class="btn-row">
+            <button type="submit" class="btn">Save pulse</button>
+            <button type="button" class="btn btn-secondary" id="clear-pulse">Clear history</button>
+          </div>
+        </form>
+        <div id="pulse-low-nudge" class="gate-crisis" hidden>
+          <p><strong>Feeling very disconnected or unsafe?</strong> These tools are for ordinary friction — not crisis or abuse.</p>
+          <p>If you feel controlled, threatened, or in danger: <a href="tel:112">112</a> · <a href="tel:0800428428">GBV 0800 428 428</a> · <a href="https://findahelpline.com" target="_blank" rel="noopener noreferrer">findahelpline.com</a></p>
+        </div>
+        <div class="chart-wrap" id="pulse-chart" aria-live="polite"></div>
+        <ul class="history-list" id="pulse-history"></ul>
+      </section>
+
+      <!-- Mode picker -->
+      <section class="card" id="modes">
+        <h2>Choose a mode</h2>
+        <p class="lead">Pick a tool. Each mode shows a short card: what’s going on, try this, why it helps, and when to pause or get outside help.</p>
+        <div class="mode-grid" id="mode-grid"></div>
+        <div class="protocol" id="mode-panel" hidden aria-live="polite"></div>
+      </section>
+
+      <!-- When to get help -->
+      <section class="card" id="help">
+        <h2>When to get outside help</h2>
+        <p class="lead">Couple Compass stops at prompts and scripts. Reach real people when the situation is bigger than a worksheet.</p>
+        <div class="call-list">
+          <div class="call-item">
+            <div>
+              <h3>Emergency — 112</h3>
+              <p>Immediate danger, violence, or you need emergency services now.</p>
+            </div>
+            <a class="btn-call-sm" href="tel:112">Call 112</a>
+          </div>
+          <div class="call-item">
+            <div>
+              <h3>SAPS — 10111</h3>
+              <p>Police response, crime, or when you need SAPS.</p>
+            </div>
+            <a class="btn-call-sm" href="tel:10111">Call 10111</a>
+          </div>
+          <div class="call-item">
+            <div>
+              <h3>GBV Command Centre — 0800 428 428</h3>
+              <p>24h gender-based violence support. From a cellphone you can also dial <strong>*120*7867#</strong>. Verify numbers if unsure.</p>
+            </div>
+            <a class="btn-call-sm" href="tel:0800428428">Call GBV</a>
+          </div>
+          <div class="call-item">
+            <div>
+              <h3>More helplines</h3>
+              <p>Mental health, relationship distress, and local support — check current numbers.</p>
+            </div>
+            <a class="btn-link" href="https://findahelpline.com" target="_blank" rel="noopener noreferrer">findahelpline.com</a>
+          </div>
+        </div>
+        <p class="help-note">Consider a registered counsellor or couples therapist when patterns keep repeating, trust is badly broken, addiction or mental-health crises are involved, or either partner feels unsafe. Couple Compass is not that service.</p>
+      </section>
+
+      <!-- Pack CTA -->
+      <section class="card cta-box" id="pack">
+        <h2>Get the Relationship Tools Pack</h2>
+        <p class="lead">Printable scripts, worksheets, and the hard disclaimer for home use. Free demo app · paid pack.</p>
+        <p class="price">R149</p>
+        <a class="btn-cta" href="https://gumroad.com" target="_blank" rel="noopener noreferrer" id="gumroad-cta">Get the pack → Gumroad</a>
+        <p class="cta-note">Placeholder link — replace with live Gumroad URL after publish. See GUMROAD_LISTING.md</p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p><strong>Couple Compass</strong> — faceless South African relationship tools.</p>
+    <p>Not therapy · Not counselling · Not mediation · Not a substitute for professionals · Adults 18+</p>
+    <p>Danger / GBV: <strong>112</strong> · <strong>10111</strong> · GBV <strong>0800 428 428</strong> · findahelpline.com · © Couple Compass</p>
+  </footer>
+
+  <script src="js/modes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
