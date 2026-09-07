@@ -3,8 +3,9 @@ Channel: Gumroad
 Brand: **Couple Compass** (own faceless relationship brand — NOT Plain Desk)  
 CTA: YOUR_GUMROAD_URL  
 Price: **R149**  
+Web demo (free): https://esteprinsloo101-web.github.io/couple-compass/  
 Pack zip: `/workspace/couple-compass/CoupleCompass_Relationship_Tools_Pack.zip`  
-QA: adversarial PASS · 2026-09-06 · safety fence baked (not therapy / DV / 18+)  
+QA: adversarial PASS · rounds 3 · 2026-09-06 · by Quill (Legal one-liner baked verbatim; zip DISCLAIMER synced)  
 Traffic: Stokvel remains primary X CTA on @PlainDesk123
 
 ---
@@ -26,12 +27,14 @@ Adult 18+ couples check-ins · repair scripts · listening · appreciation · no
 
 ## Gumroad short field / Legal fence (near top + footer)
 ```
-Relationship self-help tools only (check-ins, repair scripts, listening prompts, appreciation, values talk). Not couples therapy, not counselling, not mediation, and not clinical advice. Not for under-18s. Not for active domestic violence — if unsafe, leave and call emergency 112, SAPS 10111, GBV Command Centre 0800 428 428 (*120*7867#), or https://findahelpline.com. Couple Compass / the seller is not a clinic or HPCSA practice. No AI therapist.
+Relationship reflection tools and education for adults (18+) only. Not couples therapy, not counselling, not clinical assessment or diagnosis, and not a substitute for a registered psychologist, counsellor, or attorney. If you are unsafe or experiencing domestic / gender-based violence, leave the situation when you can and contact emergency services (10111), the GBV Command Centre (0800 428 428), SADAG (0800 567 567 / sadag.org), or https://findahelpline.com — do not rely on this pack. Couple Compass / the seller is not a clinic or HPCSA practice.
 ```
 
 ## Description (paste)
 ```
-Relationship self-help tools only (check-ins, repair scripts, listening prompts, appreciation, values talk). Not couples therapy, not counselling, not mediation, and not clinical advice. Not for under-18s. Not for active domestic violence — if unsafe, leave and call emergency 112, SAPS 10111, GBV Command Centre 0800 428 428 (*120*7867#), or https://findahelpline.com. Couple Compass / the seller is not a clinic or HPCSA practice. No AI therapist.
+Relationship reflection tools and education for adults (18+) only. Not couples therapy, not counselling, not clinical assessment or diagnosis, and not a substitute for a registered psychologist, counsellor, or attorney. If you are unsafe or experiencing domestic / gender-based violence, leave the situation when you can and contact emergency services (10111), the GBV Command Centre (0800 428 428), SADAG (0800 567 567 / sadag.org), or https://findahelpline.com — do not rely on this pack. Couple Compass / the seller is not a clinic or HPCSA practice.
+
+
 
 Couple Compass is a faceless South African relationship pack for consenting adult couples who want to improve — or feel stuck. Printable scripts + worksheets for daily check-ins, conflict repair, appreciation habits, listening exercises, and values talks. Companion free web demo (scenario cards only). Local-first pulse history. No therapist AI chat. No clinical claims or guaranteed outcomes.
 
